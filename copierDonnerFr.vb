@@ -25,9 +25,24 @@ Sub copierDonnerFr()
         ' de la feuil1
         
         If mois = "03" Then
-            
+            Worksheets("feuil2").Range("A" & dernierLingeFeuil2) = Worksheets("feuil1").Range("A" & compteur1)
+            Worksheets("feuil2").Range("B" & dernierLingeFeuil2) = Worksheets("feuil1").Range("B" & compteur1)
+            Worksheets("feuil2").Range("C" & dernierLingeFeuil2) = Worksheets("feuil1").Range("C" & compteur1)
+            Worksheets("feuil2").Range("D" & dernierLingeFeuil2) = Worksheets("feuil1").Range("D" & compteur1)
+            Worksheets("feuil2").Range("E" & dernierLingeFeuil2) = Worksheets("feuil1").Range("E" & compteur1)
+            Worksheets("feuil2").Range("F" & dernierLingeFeuil2) = Worksheets("feuil1").Range("F" & compteur1)
+            Worksheets("feuil2").Range("G" & dernierLingeFeuil2) = Worksheets("feuil1").Range("G" & compteur1)
+            Worksheets("feuil2").Range("H" & dernierLingeFeuil2) = Worksheets("feuil1").Range("H" & compteur1)
+            Worksheets("feuil2").Range("I" & dernierLingeFeuil2) = Worksheets("feuil1").Range("I" & compteur1)
+            Worksheets("feuil2").Range("J" & dernierLingeFeuil2) = Worksheets("feuil1").Range("J" & compteur1)
+            Worksheets("feuil2").Range("K" & dernierLingeFeuil2) = Worksheets("feuil1").Range("K" & compteur1)
+            Worksheets("feuil2").Range("L" & dernierLingeFeuil2) = Worksheets("feuil1").Range("L" & compteur1)
+            Worksheets("feuil2").Range("M" & dernierLingeFeuil2) = Worksheets("feuil1").Range("M" & compteur1)
+            Worksheets("feuil2").Range("N" & dernierLingeFeuil2) = Worksheets("feuil1").Range("N" & compteur1)
+            Worksheets("feuil2").Range("O" & dernierLingeFeuil2) = Worksheets("feuil1").Range("O" & compteur1)
+            Worksheets("feuil2").Range("P" & dernierLingeFeuil2) = Worksheets("feuil1").Range("P" & compteur1)
         End If
-        
+
     Next compteur1
 
 End Sub
