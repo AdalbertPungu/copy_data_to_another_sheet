@@ -16,4 +16,8 @@ Sub copierDonnerFr()
     ' contient les données, il copie les données si le mois
     ' de la cellule Date est egal à 03 donc Mars
 
+    For compteur1 = 2 To dernierLingeFeuil1
+        
+    Next compteur1
+
 End Sub
