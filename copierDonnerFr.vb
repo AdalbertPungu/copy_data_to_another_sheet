@@ -24,6 +24,10 @@ Sub copierDonnerFr()
         ' Si le mois egal à 03, on stocke dans la feuil2 les données
         ' de la feuil1
         
+        If mois = "03" Then
+            
+        End If
+        
     Next compteur1
 
 End Sub
