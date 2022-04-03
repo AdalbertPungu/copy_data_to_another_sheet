@@ -16,4 +16,14 @@ Sub copierDonnerFr()
     ' contient les données, il copie les données si le mois
     ' de la cellule Date est egal à 03 donc Mars
 
+    For compteur1 = 2 To dernierLingeFeuil1
+    
+        dernierLingeFeuil2 = Worksheets("feuil2").Range("A" & Rows.Count).End(xlUp).Row + 1
+        mois = Mid(Worksheets("Feuil1").Range("L" & compteur1).Value, 4, 2)
+        
+        ' Si le mois egal à 03, on stocke dans la feuil2 les données
+        ' de la feuil1
+        
+    Next compteur1
+
 End Sub
