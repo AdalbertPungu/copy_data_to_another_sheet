@@ -12,6 +12,13 @@ Sub copierDonnerUs()
     dernierLingeFeuil1 = Worksheets("Sheet1").Range("A" & Rows.Count).End(xlUp).Row + 1
     dernierLingeFeuil2 = Worksheets("Sheet2").Range("A" & Rows.Count).End(xlUp).Row + 1
     
+    ' Une boucle qui permet de parcourir la feuil1 qui
+    ' contient les données, il copie les données si le mois
+    ' de Latest Hire Date est egal à 03 donc Mars
+    
+    For compteur1 = 2 To dernierLingeFeuil1
+        
+    Next compteur1
     
 End Sub
 
