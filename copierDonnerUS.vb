@@ -24,6 +24,13 @@ Sub copierDonnerUs()
         ' Si le mois egal à 03, on stocke dans la feuil2 les données
         ' de la feuil1
 
+        If mois = "03" Then
+            Worksheets("Sheet2").Range("A" & dernierLingeFeuil2) = Worksheets("Sheet1").Range("A" & compteur1)
+            Worksheets("Sheet2").Range("B" & dernierLingeFeuil2) = Worksheets("Sheet1").Range("B" & compteur1)
+            Worksheets("Sheet2").Range("C" & dernierLingeFeuil2) = Worksheets("Sheet1").Range("C" & compteur1)
+            Worksheets("Sheet2").Range("D" & dernierLingeFeuil2) = Worksheets("Sheet1").Range("D" & compteur1)
+        End If
+
     Next compteur1
 
 End Sub
