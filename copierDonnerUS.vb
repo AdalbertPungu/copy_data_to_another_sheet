@@ -14,17 +14,17 @@ Sub copierDonnerUs()
     
     ' Une boucle qui permet de parcourir la feuil1 qui
     ' contient les données, il copie les données si le mois
-    ' de Latest Hire Date est egal à 03 donc Mars
+    ' de Latest Hire Date est egal à 3 donc Mars
      
     For compteur1 = 2 To dernierLingeFeuil1
         
         dernierLingeFeuil2 = Worksheets("Sheet2").Range("A" & Rows.Count).End(xlUp).Row + 1
-        mois = Mid(Worksheets("Sheet1").Range("L" & compteur1).Value, 4, 2)
+        mois = Mid(Worksheets("Sheet1").Range("L" & compteur1).Value, 1, 1)
         
-        ' Si le mois egal à 03, on stocke dans la feuil2 les données
+        ' Si le mois egal à 3, on stocke dans la feuil2 les données
         ' de la feuil1
 
-        If mois = "03" Then
+        If mois = "3" Then
             Worksheets("Sheet2").Range("A" & dernierLingeFeuil2) = Worksheets("Sheet1").Range("A" & compteur1)
             Worksheets("Sheet2").Range("B" & dernierLingeFeuil2) = Worksheets("Sheet1").Range("B" & compteur1)
             Worksheets("Sheet2").Range("C" & dernierLingeFeuil2) = Worksheets("Sheet1").Range("C" & compteur1)
